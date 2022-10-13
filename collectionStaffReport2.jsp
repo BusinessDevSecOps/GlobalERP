@@ -229,51 +229,7 @@ nf1.setMinimumFractionDigits(2);
 	 
 
 <div align="center">
-<form name="dateform" action="" method="get" onsubmit="return validate();">
-<br>
-<table  align="center" style="width: 50%;">
-<tr>
-<td align="center" colspan="4">
-<a><font size="3"> <b style="align:center; ">Collection Staff Report</b></font></a></td><br>
-<tr>
-		<%System.out.println("Date from-"+dtoday);
-		System.out.println("Date to-"+dtoday);
-		%>
-		<td id="frmDT" align="left" style="display:'' "><b><font size="2">From : </font></b>&nbsp;&nbsp; 
-		<input type="text" size="8" id="data" name="data"
-			value="<%=fromDate1 %>" size="12" readonly /></td>
-		<td align="right"><script type="text/javascript">
-		  Calendar.setup(
-		    {
-		      inputField  : "data",         // ID of the input field
-		      ifFormat    : "%d-%b-%Y",      // the date format
-		      button      : "data"       // ID of the button
-		    }
-		  );
-		</script></td>
 
-		<td id="toDT" align="left" style="display:''"><b><font size="2">To : </font></b>&nbsp;&nbsp; 
-		<input type="text" size="8" id="data1" name="data1"
-			value="<%=dtoday %>" size="12" readonly />
-		</td>
-		<td align="left">
-		<script type="text/javascript">
-		  Calendar.setup(
-		    {
-		      inputField  : "data1",         // ID of the input field
-		      ifFormat    : "%d-%b-%Y",     // the date format
-		      button      : "data1"       // ID of the button
-		    }
-		  );
-		</script></td>
-		
-		<td align="left"><input type="submit" name="submit" id="submit" value="Submit"></td>
-	</tr>
-</tr>
-
-
-</table>
-</form>
 </div>
 
 <div>
